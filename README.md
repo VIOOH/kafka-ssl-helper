@@ -15,23 +15,16 @@ Github `Settings/Developer settings/Personal access tokens`
 token has `read:packages, write:packages and delete:packages`
 permissions
 
-Add to your .zshrc/.bashrc the following
-``` bash
-export GH_PACKAGES_USR=YOUR_GITHUB_USER
-export GH_PACKAGES_PSW=SECRET_TOKEN
-```
 
 ### Using Leiningen
 Add the following repository to your `project.clj`:
 
 ``` clojure
-["github" {:url "https://maven.pkg.github.com/VIOOH/kafka-ssl-helper"
-           :username :env/GH_PACKAGES_USR
-           :password :env/GH_PACKAGES_PSW}]
-
+:repositories
+ [["github" {:url "https://maven.pkg.github.com/VIOOH/kafka-ssl-helper"}]]
 ```
 
-And add the kafka-ssl-helper dependency: `[com.viooh/kafka-ssl-helper "0.5.0"]`.
+And add the kafka-ssl-helper dependency: `[com.viooh/kafka-ssl-helper "0.7.0"]`.
 
 ### Using Gradle
 
@@ -43,10 +36,6 @@ repositories {
     }
     maven {
         url "https://maven.pkg.github.com/VIOOH/kafka-ssl-helper"
-        credentials {
-            username = System.getenv('GH_PACKAGES_USR')
-            password = System.getenv('GH_PACKAGES_PSW')
-        }
     }
 }
 ```
