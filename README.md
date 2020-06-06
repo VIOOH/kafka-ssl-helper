@@ -24,7 +24,7 @@ Add the following repository to your `project.clj`:
  [["github" {:url "https://maven.pkg.github.com/VIOOH/kafka-ssl-helper"}]]
 ```
 
-And add the kafka-ssl-helper dependency: `[com.viooh/kafka-ssl-helper "0.7.0"]`.
+And add the kafka-ssl-helper dependency: `[com.viooh/kafka-ssl-helper "0.9.0"]`.
 
 ### Using Gradle
 
