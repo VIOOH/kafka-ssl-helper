@@ -1,4 +1,4 @@
-(defproject com.viooh/kafka-ssl-helper "0.7.0"
+(defproject com.viooh/kafka-ssl-helper "0.8.0"
   :description "Temporary trust/keystores for your kafka apps"
   :url "https://github.com/VIOOH/kafka-ssl-helper"
 
