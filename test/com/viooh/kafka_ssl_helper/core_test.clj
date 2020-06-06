@@ -13,12 +13,12 @@
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
 ;;
-(ns kafka-ssl-helper.core-test
+(ns com.viooh.kafka-ssl-helper.core-test
   (:require [midje.sweet :refer :all]
             [midje.util :refer :all]
-            [kafka-ssl-helper.core :as sut]))
+            [com.viooh.kafka-ssl-helper.core :as sut]))
 
-(testable-privates kafka-ssl-helper.core
+(testable-privates com.viooh.kafka-ssl-helper.core
                    random-password)
 
 

@@ -16,7 +16,7 @@
  *
  *
  */
-package viooh.kafka_ssl_helper;
+package com.viooh.kafka_ssl_helper;
 
 
 import java.util.Map;
@@ -36,7 +36,7 @@ public class KafkaSSLHelper {
 
     static {
         Clojure.var("clojure.core", "require")
-            .invoke( Clojure.read("kafka-ssl-helper.core"));
+            .invoke( Clojure.read("com.viooh.kafka-ssl-helper.core"));
         Clojure.var("clojure.core", "require")
             .invoke( Clojure.read("clojure.walk"));
     }
@@ -47,7 +47,7 @@ public class KafkaSSLHelper {
 
     private static final Object EMPTY_MAP = Clojure.var("clojure.core", "hash-map").invoke();
 
-    private static final IFn sslOptsFn = Clojure.var("kafka-ssl-helper.core",
+    private static final IFn sslOptsFn = Clojure.var("com.viooh.kafka-ssl-helper.core",
                                                      "ssl-opts");
 
 

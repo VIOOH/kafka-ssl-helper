@@ -13,7 +13,7 @@
 ;; See the License for the specific language governing permissions and
 ;; limitations under the License.
 ;;
-(ns kafka-ssl-helper.core
+(ns com.viooh.kafka-ssl-helper.core
   (:import [java.security KeyStore]
            [java.security.cert Certificate CertificateFactory]
            [java.security SecureRandom])

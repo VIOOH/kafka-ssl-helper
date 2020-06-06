@@ -7,7 +7,7 @@
 
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [xsc/pem-reader "0.1.1"]]
-  :repl-options {:init-ns kafka-ssl-helper.core}
+  :repl-options {:init-ns com.viooh.kafka-ssl-helper.core}
   :profiles {:dev
              {:plugins [[lein-midje "3.2"]]
               :dependencies [[midje/midje "1.9.8"]]}}
