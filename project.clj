@@ -15,8 +15,4 @@
   :java-source-paths ["java/src"]
   :javac-options     ["-target" "1.8" "-source" "1.8"]
 
-  :deploy-repositories
-  [["github" {:url "https://maven.pkg.github.com/VIOOH/kafka-ssl-helper"
-              :username :env/GH_PACKAGES_USR
-              :password :env/GH_PACKAGES_PSW
-              :sign-releases false}]])
+  )
